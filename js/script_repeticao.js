@@ -64,3 +64,32 @@ for(let pos in transporte){
   console.log(transporte[pos])
   divForin.innerHTML += `${transporte[pos]} <br>`
 }
+
+//For Of
+const divForOf = document.querySelector('#div-forof')
+
+for(let elem of transporte){
+  divForOf.innerHTML += `${elem} <br>`
+}
+
+//Coleção de Pessoas - Array de Objeto
+const pessoas = [
+  {nome: 'Maria', idade: 18, renda: 15000},
+  {nome: 'Josefina', idade: 23, renda: 1800},
+  {nome: 'Chicó', idade: 32, renda: 1.50},
+  {nome: 'João Grilo', idade: 34, renda: 2.20}
+]
+
+console.log('-------------Lista Por For In--------------')
+for(let indiceObjPessoa in pessoas){
+  console.log(pessoa[indiceObjPessoa].nome, pessoas[indiceObjpessoa].idade, pessoas[indiceObjPessoa].renda)
+
+}
+
+console.log('-------------Lista Por Of------------------')
+for(let pessoa of pessoas){
+  console.log(pessoa.nome, pessoa.idade, pessoa.renda)
+}
+
+//Foreach
+const divForeach = document.querySelector('#div-foreach')
